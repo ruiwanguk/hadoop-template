@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+
+<!--
+    You can test this configuration xml using the command below:
+    hadoop fs -conf conf/hadoop/hadoop-localhost.xml -ls .
+-->
+
+<configuration>
+    <property>
+        <name>fs.default.name</name>
+        <value>file:///</value>
+    </property>
+
+    <property>
+        <name>mapred.job.tracker</name>
+        <value>localhost:8021</value>
+    </property>
+</configuration>
