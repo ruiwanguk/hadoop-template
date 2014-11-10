@@ -1,4 +1,4 @@
 hadoop-template
 ===============
 
-Provide an easy to adapt tempalte for designing and chaining hadoop jobs. 
+Provide a clean tempalte for designing and chaining hadoop jobs. 
