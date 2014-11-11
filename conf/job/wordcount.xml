@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+
+<!--
+    Overwrite hadoop configurations for word count job
+-->
+
+<configuration>
+    <property>
+        <name>mapred.reduce.tasks</name>
+        <value>5</value>
+        <description>The number of reducers used for the job</description>
+    </property>
+
+    <property>
+        <name>mapred.output.compress</name>
+        <value>true</value>
+        <description>Whether to compress the jobs final output</description>
+    </property>
+
+    <property>
+        <name>mapred.output.compression.codec</name>
+        <value>org.apache.hadoop.io.compress.BZip2Codec</value>
+        <description>Compress codec, using BZip since it supports splitting</description>
+    </property>
+
+    <property>
+        <name>mapred.output.compress.type</name>
+        <value>BLOCK</value>
+        <description>Compress type, change from RECORD to BLOCK to make it more efficient</description>
+    </property>
+</configuration>

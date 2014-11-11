@@ -1,5 +1,6 @@
 package org.harrywang.hadoop.wordcount;
 
+import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.conf.Configured;
 import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.io.IntWritable;
@@ -27,7 +28,10 @@ public class WordCount extends Configured implements Tool{
         }
 
         // setup a hadoop job and reuse the existing configurations
-        Job job = new Job(getConf());
+        Configuration configuration = getConf();
+        configuration.addResource("job/wordcount.xml");
+
+        Job job = new Job(configuration);
         job.setJarByClass(WordCount.class);
         job.setJobName("Word Count");
 

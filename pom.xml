@@ -129,6 +129,9 @@
                             <classpathPrefix>lib</classpathPrefix>
                             <useUniqueVersions>false</useUniqueVersions>
                         </manifest>
+                        <manifestEntries>
+                            <Class-Path>./conf/</Class-Path>
+                        </manifestEntries>
                     </archive>
                 </configuration>
             </plugin>
