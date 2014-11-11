@@ -51,7 +51,7 @@ public class WordCount extends Configured implements Tool{
 
         // check the status of the job
         boolean success = job.waitForCompletion(true);
-        return success ? 0 : 1;
+        return success ? 0 : -1;
     }
 
     public static void main(String[] args) throws Exception {
