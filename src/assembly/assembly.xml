@@ -36,7 +36,7 @@
             <filtered>true</filtered>
         </fileSet>
 
-        <!-- copy shell scirpts to the final build -->
+        <!-- copy shell scripts to the final build -->
         <fileSet>
             <directory>${project.basedir}/script</directory>
             <outputDirectory>/</outputDirectory>

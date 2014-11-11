@@ -26,8 +26,8 @@ public class WordCount extends Configured implements Tool{
             return -1;
         }
 
-        // setup a hadoop job
-        Job job = new Job();
+        // setup a hadoop job and reuse the existing configurations
+        Job job = new Job(getConf());
         job.setJarByClass(WordCount.class);
         job.setJobName("Word Count");
 

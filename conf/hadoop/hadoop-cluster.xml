@@ -1,6 +1,8 @@
 <?xml version="1.0"?>
 
 <!--
+    Distributed mode configuration for Hadoop
+
     You can test this configuration xml using the command below:
     hadoop fs -conf conf/hadoop/hadoop-cluster.xml -ls .
 -->
@@ -13,7 +15,7 @@
 
     <property>
         <name>mapred.job.tracker</name>
-        <value>hadoop-master-04.ebi.ac.uk:50030</value>
+        <value>hadoop-master-04.ebi.ac.uk:54311</value>
     </property>
 
     <property>
