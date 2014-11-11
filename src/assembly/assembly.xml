@@ -19,6 +19,7 @@
     </dependencySets>
 
     <fileSets>
+        <!-- copy jar file to the final build -->
         <fileSet>
             <directory>${project.basedir}/target</directory>
             <includes>
@@ -27,8 +28,17 @@
             <!--<outputDirectory>${assembly.dir}</outputDirectory>-->
             <outputDirectory>/</outputDirectory>
         </fileSet>
+
+        <!-- copy configurations to the final build-->
         <fileSet>
             <directory>${project.basedir}/conf</directory>
+            <outputDirectory>/conf</outputDirectory>
+            <filtered>true</filtered>
+        </fileSet>
+
+        <!-- copy shell scirpts to the final build -->
+        <fileSet>
+            <directory>${project.basedir}/script</directory>
             <outputDirectory>/</outputDirectory>
             <filtered>true</filtered>
         </fileSet>
