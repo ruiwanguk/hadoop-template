@@ -5,6 +5,7 @@ INPUT_DIR=$1
 OUTPUT_DIR=$2
 
 # concatinate the jar libraries into one string
+# solution from: http://grepalex.com/2013/02/25/hadoop-libjars/
 LIBJARS=""
 for f in lib/*.jar
 do
