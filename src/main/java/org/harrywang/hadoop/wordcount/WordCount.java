@@ -29,6 +29,8 @@ public class WordCount extends Configured implements Tool{
 
         // setup a hadoop job and reuse the existing configurations
         Configuration configuration = getConf();
+
+        // load custom configurations for the job
         configuration.addResource("job/wordcount.xml");
 
         Job job = new Job(configuration);
