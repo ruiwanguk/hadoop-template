@@ -1,6 +1,6 @@
 <assembly>
 
-    <id>pipeline-deployment</id>
+    <id>hadoop-template-deployment</id>
 
     <formats>
         <format>zip</format>
